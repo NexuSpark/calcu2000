@@ -1,0 +1,109 @@
+:root {
+    --primary-color: #f99381;
+    --primary-color-lighter: #FEF4F2;
+    --secondary-color: #faebdb;
+    --accent-color: #20bfa8;
+    --accent-color-darker: #137365;
+}
+
+@font-face {
+    font-family: "Jura";
+    src: url(fonts/Jura-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Flavors";
+    src: url(fonts/Flavors-Regular.ttf);
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: "Jura", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    margin: 0 auto;
+    gap: 1rem;
+    width: fit-content;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    padding: 1rem;
+    margin: 0 auto;
+    gap: 1rem;
+    background-color: var(--secondary-color);
+    border-top: #20bfa8 0.3rem solid;
+    border-bottom: #20bfa8 0.3rem solid;
+    border-radius: 0.3rem;
+}
+
+#inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+h1 {
+    color: var(--accent-color);
+    font-family: "Flavors", sans-serif;
+    font-size: 5rem;
+    text-shadow:#faebdb 0 0 0.3rem;
+    margin: 0;
+}
+
+input {
+    width: 11rem;
+    height: 2rem;
+    border-radius: 0.3rem;
+    border: none;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Jura", sans-serif;
+    background-color: var(--primary-color-lighter);
+    color: var(--accent-color);
+}
+
+#operations > button {
+    width: 2.3rem;
+    font-size: 1.5rem;
+}
+
+#rounders > button {
+    width: 8rem;
+    font-size: 1.2rem;
+}
+
+button {
+    height: 2.3rem;
+    border-radius: 0.3rem;
+    border: none;
+    text-align: center;
+    background-color: var(--accent-color);
+    color: var(--primary-color-lighter);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--accent-color-darker);
+    color: var(--accent-color);
+}
+
+#result {
+    color: var(--accent-color);
+    font-size: 2.5rem;
+    margin: 0;
+    text-shadow: var(--accent-color-darker) 0 0 0.3rem;
+}
