@@ -14,42 +14,42 @@ function getResult() {
 
 function add() {
     const { num1, num2 } = getValues();
-    setResult(parseInt(num1) + parseInt(num2));
+    setResult(parseFloat(num1) + parseFloat(num2));
 }
 
 function subtract() {
     const { num1, num2 } = getValues();
-    setResult(parseInt(num1) - parseInt(num2));
+    setResult(parseFloat(num1) - parseFloat(num2));
 }
 
 function multiply() {
     const { num1, num2 } = getValues();
-    setResult(parseInt(num1) * parseInt(num2));
+    setResult(parseFloat(num1) * parseFloat(num2));
 }
 
 function divide() {
     const { num1, num2 } = getValues();
-    setResult(parseInt(num1) / parseInt(num2));
+    setResult(parseFloat(num1) / parseFloat(num2));
 }
 
 function sqrt() {
     const { num1 } = getValues();
-    setResult(Math.sqrt(parseInt(num1)));
+    setResult(Math.sqrt(parseFloat(num1)));
 }
 
 function pow() {
     const { num1, num2 } = getValues();
-    setResult(Math.pow(parseInt(num1), parseInt(num2)));
+    setResult(Math.pow(parseFloat(num1), parseFloat(num2)));
 }
 
 function abs() {
     const { num1 } = getValues();
-    setResult(Math.abs(parseInt(num1)));
+    setResult(Math.abs(parseFloat(num1)));
 }
 
 function random() {
     const { num1, num2 } = getValues();
-    setResult(Math.floor(Math.random() * (parseInt(num2) - parseInt(num1) + 1)) + parseInt(num1));
+    setResult(Math.floor(Math.random() * (parseFloat(num2) - parseFloat(num1) + 1)) + parseFloat(num1));
 }
 
 function round() {
