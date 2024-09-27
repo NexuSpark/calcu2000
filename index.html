@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="favicon.png" type="image/png">
+    <script src="main.js"></script>
     <title>Calcu2000</title>
 </head>
 <body>
@@ -17,20 +18,20 @@
             <input type="number" id="num2" value="0" title="Segundo número">
         </div>
         <div id="operations">
-            <button id="add" title="Sumar">+</button>
-            <button id="subtract" title="Restar">-</button>
-            <button id="multiply" title="Multiplicar">*</button>
-            <button id="divide" title="Dividir">/</button>
-            <button id="sqrt" title="Raíz cuadrada del primer número">√</button>
-            <button id="pow" title="Potencia del primer número al segundo">^</button>
-            <button id="abs" title="Valor absoluto del primer número">|</button>
-            <button id="random" title="Generar número aleatorio entre el primer y el segundo número">?</button>
+            <button id="add" onclick="add()" title="Sumar">+</button>
+            <button id="subtract" onclick="subtract()" title="Restar">-</button>
+            <button id="multiply" onclick="multiply()" title="Multiplicar">*</button>
+            <button id="divide" onclick="divide()" title="Dividir">/</button>
+            <button id="sqrt" onclick="sqrt()" title="Raíz cuadrada del primer número">√</button>
+            <button id="pow" onclick="pow()" title="Potencia del primer número al segundo">^</button>
+            <button id="abs" onclick="abs()" title="Valor absoluto del primer número">|</button>
+            <button id="random" onclick="random()" title="Generar número aleatorio entre el primer y el segundo número">?</button>
         </div>
         <p id="result">0</p>
         <div id="rounders">
-            <button id="round" title="Redondear el resultado">Redondear</button>
-            <button id="floor" title="Redondear el resultado hacia abajo">Redondear ↓</button>
-            <button id="ceil" title="Redondear el resultado hacia arriba">Redondear ↑</button>
+            <button id="round" onclick="round()" title="Redondear el resultado">Redondear</button>
+            <button id="floor" onclick="floor()" title="Redondear el resultado hacia abajo">Redondear ↓</button>
+            <button id="ceil" onclick="ceil()" title="Redondear el resultado hacia arriba">Redondear ↑</button>
         </div>
     </main>
 </body>
